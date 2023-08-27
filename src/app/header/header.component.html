@@ -1,0 +1,27 @@
+<header class="">
+    <div class="container ">
+      <div class="row justify-content-between">
+        <div class="col-3">
+          <img src="../assets/img/logo.png">
+        </div>
+  
+        <div class="col-9 text-end">
+  
+          <div class="menu_icon" [class.menu_icon_class]="menu_icon_variable" (click)="openMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="menu" [class.menuClass]="menuVariable">
+            <ul (click)="onClick()">
+              <li><a href="" routerLink="/">Home</a></li>
+              <li><a href="" routerLink="/about">About</a></li>
+              <li style="border-bottom: none;"><a href="" routerLink="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </header>
